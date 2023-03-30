@@ -78,4 +78,13 @@ const botao = document.getElementById('btn-alterar-cor');
  });
 
 
- 
+ // Exercício 8
+ const divExemplo = document.querySelector('#div-exemplo');
+ divExemplo.addEventListener('mouseover', () => {
+      divExemplo.innerHTML = 'Mouse passou por cima';
+      divExemplo.style.backgroundColor = 'green';
+  });
+  divExemplo.addEventListener('mouseout', () => {
+      divExemplo.innerHTML = 'Passe o mouse aqui';
+     divExemplo.style.backgroundColor = 'blue';
+  });
