@@ -130,14 +130,12 @@ txt.addEventListener("mouseover",function(){
  * questões anteriores que podem te auxiliar a resolver essa parte). Utilize o operador ternário para verificar 
  * qual conteúdo deve ser exibido e qual cor de fundo deve ser aplicada. Exemplifique e demonstre a saída!
  */
-const box = document.getElementById("box")
-
-box.addEventListener("mouseover",function(){
-    box.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
-    box.style.backgroundColor = "yellow"
-})
-
-box.addEventListener("mouseout",function(){
-    box.innerHTML === 'Tchau' ? 'Tchau' : 'Olá';
-    box.style.backgroundColor = "green"
-})
+const box = document.querySelector('.box');
+      box.addEventListener('mouseover', () => {
+        box.textContent = box.textContent === 'Olá' ? 'Tchau' : 'Olá';
+        box.style.backgroundColor = box.style.backgroundColor === 'green' ? 'yellow' : 'green';
+      });
+      box.addEventListener('mouseout', () => {
+        box.textContent = box.textContent === 'Olá' ? 'Tchau' : 'Olá';
+        box.style.backgroundColor = box.style.backgroundColor === 'green' ? 'yellow' : 'green';
+      });
