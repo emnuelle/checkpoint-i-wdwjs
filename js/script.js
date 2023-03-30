@@ -70,6 +70,11 @@ if(login == "admin" && senha == "1234"){
 
 
 // Exercício 6
+/*
+ * Vamos criar um programa que calcule a média de 7 notas e exiba uma mensagem indicando se o aluno
+ * foi aprovado ou reprovado. Considere que a média mínima para aprovação é 6.Exemplifique e demonstre
+ * a saída!
+ */
 let nota1 = 6
 let nota2 = 5
 let nota3 = 8
@@ -88,6 +93,11 @@ if(media < 6){
 
 
 // Exercício 7
+/*
+ * Crie um botão em HTML e utilize o evento de clique em Javascript para alterar a cor de fundo da página
+ * para verde. Para isso, utilize o código document.body.style.backgroundColor = 'green';dentro da função
+ * do evento de clique.Exemplifique e demonstre a saída!
+ */
 const botao = document.getElementById('btn-alterar-cor');
 
  botao.addEventListener('click', () => {
@@ -97,6 +107,13 @@ const botao = document.getElementById('btn-alterar-cor');
 
 
  // Exercício 8
+/*
+ * Crie um programa em Javascript que contenha um evento em que, ao passar o mouse sobre uma div,
+ * o texto e a cor de fundo da div são alterados. O aluno deverá criar a estrutura do evento e declarar o id da
+ * div no HTML. Dica: para alterar o texto e a cor de fundo da div, utilize o método innerHTML para modificar 
+ * o  conteúdo  da  div  e  a  propriedade  style.backgroundColor  para  alterar  a  cor  de  fundo. Exemplifique  e
+ * demonstre a saída!
+ */
  const divExemplo = document.querySelector('#div-exemplo');
  divExemplo.addEventListener('mouseover', () => {
       divExemplo.innerHTML = 'Mouse passou por cima';
@@ -108,7 +125,13 @@ const botao = document.getElementById('btn-alterar-cor');
   });
 
 
-  // Exercício 9
+// Exercício 9
+/*
+ * Crie eventos que  ao  passar  o  mouse  sobre  a  div  "box"e  ao  deixar  ela,  o  seu  conteúdo  seja trocado 
+ * entre  "Olá"  e  "Tchau"  e  a  cor  de  fundo seja  alterada  entre  verde  e  amarelo(Você  já  tem  as  dicas  das 
+ * questões anteriores que podem te auxiliar a resolver essa parte). Utilize o operador ternário para verificar 
+ * qual conteúdo deve ser exibido e qual cor de fundo deve ser aplicada. Exemplifique e demonstre a saída!
+ */
   const box = document.getElementById("box")
 
 box.addEventListener("mouseover",function(){
