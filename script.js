@@ -27,6 +27,11 @@ if(imc < 18.5) {
 
 
 // Exercício 4
+/*
+ * Faça um programa que receba idade de uma pessoa e exiba uma mensagem indicando em qual faixa
+ * etária ela se encontra: criança (até 12 anos), adolescente (entre 13 e 18 anos), adulto (entre 19 e60 anos)
+ * ou idoso (mais de 60 anos).Exemplifique e demonstre a saída
+*/
 let idade = 25
 
 if(idade <= 12) {
