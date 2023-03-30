@@ -41,3 +41,11 @@ if(idade <= 12) {
 
 
 // Exercício 5
+let login = "admin"
+let senha = "1234"
+
+if(login == "admin" && senha == "1234"){
+    console.log("O login foi realizado")
+}else{
+    console.log("Falha de autenticação")
+}
