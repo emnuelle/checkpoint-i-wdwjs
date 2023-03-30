@@ -1,7 +1,7 @@
 // Exercício 1
 // Como declarar uma variável com valor undefined em JavaScript?Exemplifique e demonstre a saída do valor da variável!
-let variavel = undefined; // Pode-se não adicionar "undefined" ou apenas não atribuir um valor.
-console.log(variavel); // Aparecerá: undefined.
+let nome = undefined; // Pode-se não adicionar "undefined" ou apenas não atribuir um valor.
+console.log(nome); // Aparecerá: undefined.
 
 
 // Exercício 2
