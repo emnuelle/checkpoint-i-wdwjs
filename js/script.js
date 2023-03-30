@@ -1,4 +1,5 @@
 // Exercício 1
+// Como declarar uma variável com valor undefined em JavaScript?Exemplifique e demonstre a saída do valor da variável!
 let variavel = undefined; // Pode-se não adicionar "undefined" ou apenas não atribuir um valor.
 console.log(variavel); // Aparecerá: undefined.
 
@@ -52,6 +53,12 @@ if(idade <= 12) {
 
 
 // Exercício 5
+/*
+ * Crie um programa que receba um nome de usuário e uma senha e verifique se eles correspondem aos 
+ * dados de um usuário cadastrado. Considere que o usuário cadastrado possui nome de usuário "admin" e
+ * senha "1234". O programa deve exibir uma mensagem indicando se o login foi realizado com sucesso ou 
+ * se houve falha de autenticação.Exemplifique e demonstre a saída!
+ */
 let login = "admin"
 let senha = "1234"
 
