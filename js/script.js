@@ -98,12 +98,11 @@ if(media < 6){
  * para verde. Para isso, utilize o código document.body.style.backgroundColor = 'green';dentro da função
  * do evento de clique.Exemplifique e demonstre a saída!
  */
-const botao = document.getElementById('btn-alterar-cor');
+const btn = document.getElementById("btn");
 
- botao.addEventListener('click', () => {
-   
-   document.body.style.backgroundColor = 'green';
- });
+    btn.addEventListener('click', function() {
+    document.body.style.backgroundColor = 'green';
+});
 
 
  // Exercício 8
@@ -114,15 +113,14 @@ const botao = document.getElementById('btn-alterar-cor');
  * o  conteúdo  da  div  e  a  propriedade  style.backgroundColor  para  alterar  a  cor  de  fundo. Exemplifique  e
  * demonstre a saída!
  */
- const divExemplo = document.querySelector('#div-exemplo');
- divExemplo.addEventListener('mouseover', () => {
-      divExemplo.innerHTML = 'Mouse passou por cima';
-      divExemplo.style.backgroundColor = 'green';
-  });
-  divExemplo.addEventListener('mouseout', () => {
-      divExemplo.innerHTML = 'Passe o mouse aqui';
-     divExemplo.style.backgroundColor = 'blue';
-  });
+const txt = document.getElementById("texto")
+
+txt.addEventListener("mouseover",function(){
+
+    txt.innerHTML = "NOVO TEXTO!";
+    txt.style.backgroundColor = "grey"
+    txt.style.color = "white"
+})
 
 
 // Exercício 9
@@ -132,7 +130,7 @@ const botao = document.getElementById('btn-alterar-cor');
  * questões anteriores que podem te auxiliar a resolver essa parte). Utilize o operador ternário para verificar 
  * qual conteúdo deve ser exibido e qual cor de fundo deve ser aplicada. Exemplifique e demonstre a saída!
  */
-  const box = document.getElementById("box")
+const box = document.getElementById("box")
 
 box.addEventListener("mouseover",function(){
     box.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
