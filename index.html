@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <style>
+        .box {
+          width: 200px;
+          height: 200px;
+          text-align: center;
+          padding-top: 80px;
+          font-size: 30px;
+          background-color: green;
+          color: white;
+        }
+      </style>
 </head>
 <body>
     <h1>Checkpoint</h1>
-    <button id="btn">Clique aqui</button>
+    <button id="btn-alterar-cor">Alterar cor</button>
+    <div id="div-exemplo" style="width: 200px; height: 200px; background-color: blue; color: white; text-align: center;">Passe o mouse aqui</div>
+    <div class="box" id="box-exemplo">Olá</div>
+
+    <script>
+      const botao = document.querySelector('#btn-alterar-cor');
+
+      botao.addEventListener('click', () => {
+        
+        document.body.style.backgroundColor = 'green'
+    });
+//-------------------------------------------------------------------------------------------------------------------------------------------------/
+      const divExemplo = document.querySelector('#div-exemplo');
+    divExemplo.addEventListener('mouseover', () => {
+        divExemplo.innerHTML = 'Mouse passou por cima';
+        divExemplo.style.backgroundColor = 'green';
+    });
+    divExemplo.addEventListener('mouseout', () => {
+        divExemplo.innerHTML = 'Passe o mouse aqui';
+        divExemplo.style.backgroundColor = 'blue';
+    });
+    //-------------------------------------------------------------------------------------------------------------------------------------------------/
+    const divBox = document.querySelector('#box-exemplo');
+    divBox.addEventListener('mouseover', () => {
+        divBox.innerHTML = divBox.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
+        divBox.style.backgroundColor = divBox.style.backgroundColor === 'green' ? 'yellow' : 'green';
+});
+    divBox.addEventListener('mouseout', () => {
+        divBox.innerHTML = 'Olá';
+        divBox.style.backgroundColor = 'green';
+ });      
+    </script>
 
     <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis odio maxime ipsa cum in numquam nostrum eius quas quibusdam corrupti qui, minima nemo, blanditiis animi magnam. Molestias architecto pariatur laboriosam.</p>
 
