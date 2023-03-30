@@ -69,3 +69,13 @@ if(media < 6){
 }
 
 
+// Exercício 7
+const botao = document.getElementById('btn-alterar-cor');
+
+ botao.addEventListener('click', () => {
+   
+   document.body.style.backgroundColor = 'green';
+ });
+
+
+ 
