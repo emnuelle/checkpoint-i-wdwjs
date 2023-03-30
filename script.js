@@ -88,3 +88,17 @@ const botao = document.getElementById('btn-alterar-cor');
       divExemplo.innerHTML = 'Passe o mouse aqui';
      divExemplo.style.backgroundColor = 'blue';
   });
+
+
+  // Exercício 9
+  const box = document.getElementById("box")
+
+box.addEventListener("mouseover",function(){
+    box.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
+    box.style.backgroundColor = "yellow"
+})
+
+box.addEventListener("mouseout",function(){
+    box.innerHTML === 'Tchau' ? 'Tchau' : 'Olá';
+    box.style.backgroundColor = "green"
+})
