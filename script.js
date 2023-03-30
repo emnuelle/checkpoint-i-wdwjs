@@ -49,3 +49,23 @@ if(login == "admin" && senha == "1234"){
 }else{
     console.log("Falha de autenticação")
 }
+
+
+// Exercício 6
+let nota1 = 6
+let nota2 = 5
+let nota3 = 8
+let nota4 = 8
+let nota5 = 5
+let nota6 = 6
+let nota7 = 7
+
+let media = (nota1 + nota2 + nota3 + nota4 + nota5 +nota6 + nota7) / 7
+
+if(media < 6){
+    console.log("Reprovado")
+}else{
+    console.log("Aprovado")
+}
+
+
