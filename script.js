@@ -99,3 +99,21 @@ const btn = document.getElementById("btn");
     btn.addEventListener('click', function() {
     document.body.style.backgroundColor = 'green';
 });
+
+/**Exercicio 8
+ * Crie um programa em Javascript que contenha um evento em que, ao passar o mouse sobre uma div,
+ * o texto e a cor de fundo da div são alterados. O aluno deverá criar a estrutura do evento e declarar o id da
+ * div no HTML. Dica: para alterar o texto e a cor de fundo da div, utilize o método innerHTML para modificar 
+ * o  conteúdo  da  div  e  a  propriedade  style.backgroundColor  para  alterar  a  cor  de  fundo. Exemplifique  e
+ * demonstre a saída!
+ */
+
+const txt = document.getElementById("texto")
+
+txt.addEventListener("mouseover",function(){
+
+    txt.innerHTML = "NOVO TEXTO!";
+    txt.style.backgroundColor = "grey"
+    txt.style.color = "white"
+})
+
