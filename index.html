@@ -8,12 +8,24 @@
     <title>CP1-WEB/DEV</title>
 </head>
 <body>
+    <div class="box" id="box-exemplo">Olá</div>
     <h1>Checkpoint</h1>
     <button id="btn">Clique aqui</button>
 
     <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis odio maxime ipsa cum in numquam nostrum eius quas quibusdam corrupti qui, minima nemo, blanditiis animi magnam. Molestias architecto pariatur laboriosam.</p>
 
-    <h2 id="box">Olá</h2>
+   
+<script>
+    const divBox = document.querySelector('#box-exemplo');
+    divBox.addEventListener('mouseover', () => {
+        divBox.innerHTML = divBox.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
+        divBox.style.backgroundColor = divBox.style.backgroundColor === 'green' ? 'yellow' : 'green';
+});
+    divBox.addEventListener('mouseout', () => {
+        divBox.innerHTML = 'Olá';
+        divBox.style.backgroundColor = 'green';
+ });      
+</script>
 
     <script src="script.js"></script>
 </body>
