@@ -4,6 +4,7 @@ console.log(variavel); // Aparecerá: undefined.
 
 
 // Exercício 2
+// Como usar o operador % em JavaScript? Exemplifique e demonstre a saída!
 // O operador % é o operador de resto ou módulo, que retorna o resto da divisão entre dois números.
 let a = 10;
 let b = 3;
