@@ -46,3 +46,17 @@ if(idade <= 12){
 }else{
     console.log("Idoso")
 }
+
+/**Execicio 5
+ * Crie um programa que receba um nome de usuário e uma senha e verifique se eles correspondem aos 
+ * dados de um usuário cadastrado
+ */
+
+let login = "admin"
+let senha = "1234"
+
+if(login == "admin" && senha == "1234"){
+    console.log("O login foi realizado")
+}else{
+    console.log("Falha de autenticação")
+}
