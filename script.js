@@ -88,3 +88,15 @@ txt.addEventListener("mouseover", function(){
     txt.style.color = "#867070"
 })
 
+//  ex 9 eventos ao passar o mouse
+const box = document.getElementById("box")
+box.addEventListener("mouseover", function(){
+    box.innerHTML === 'olá' ? 'tchau' : 'olá';
+    box.style.backgroundColor = "yellow"
+})
+
+box.addEventListener("mouseout", function(){
+    box.innerHTML === 'tchau' ? 'tchau' : 'olá';
+    box.style.backgroundColor = "green";
+})
+// n foi direito :(((
