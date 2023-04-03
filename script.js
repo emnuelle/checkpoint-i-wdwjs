@@ -55,4 +55,36 @@ else{
     console.log("falha")
 }
 
-// 
+// ex 6 calculando a média de 7 notas etc...
+let nota1 = 10
+let nota2 = 10
+let nota3 = 10
+let nota4 = 10
+let nota5 = 10
+let nota6 = 10
+let nota7 = 10
+
+let media = (nota1 + nota2 + nota3 + nota4  + nota5 + nota6 + nota7) / 7
+
+if(media < 6){
+    console.log("nota:", media,"reprovado")
+}
+else{
+    console.log("nota:", media, "aprovado")
+}
+
+//  ex 7 botao HTML ** poxa esse verde ferrou a estética rosa :(
+const btn = document.getElementById("btn");
+    btn.addEventListener('click', function(){
+        document.body.style.backgroundColor = "green";
+    })
+
+//  ex 8 abrindo uma div ao passar o mouse 
+const txt = document.getElementById("texto")
+
+txt.addEventListener("mouseover", function(){
+    txt.innerHTML = "OI!";
+    txt.style.backgroundColor = "#E4D0D0"
+    txt.style.color = "#867070"
+})
+
