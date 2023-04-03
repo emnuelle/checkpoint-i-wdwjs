@@ -13,3 +13,18 @@ if(resultado != 0){
 }else{
     console.log("O numero é impar")
 }
+
+/** Exercicio 3 
+ * Escreva  um  programa  IMC 
+*/
+
+let imc = 25
+
+if(imc < 18.5){
+    console.log("abaixo  do  peso")
+}else if(imc >= 18.5 && imc <= 24.9){
+    console.log("peso ideal")
+}else{
+    console.log("Acima do peso")
+}
+
