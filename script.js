@@ -108,3 +108,13 @@ txt.addEventListener("mouseover",function(){
     txt.style.backgroundColor = "grey"
     txt.style.color = "white"
 })
+
+/**
+ * Exercicio 9
+ * Crie eventos que  ao  passar  o  mouse  sobre  a  div  "box"e  ao  deixar  ela,  o  seu  conteúdo  seja trocado 
+ * entre  "Olá"  e  "Tchau"  e  a  cor  de  fundo seja  alterada  entre  verde  e  amarelo(Você  já  tem  as  dicas  das 
+ * questões anteriores que podem te auxiliar a resolver essa parte). Utilize o operador ternário para verificar 
+ * qual conteúdo deve ser exibido e qual cor de fundo deve ser aplicada.
+ */
+
+const box = document.getElementById("box")
