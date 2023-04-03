@@ -60,3 +60,51 @@ if(login == "admin" && senha == "1234"){
 }else{
     console.log("Falha de autenticação")
 }
+
+/**Exercicio 6
+ * Vamos criar um programa que calcule a média de 7 notas e exiba uma mensagem indicando se o aluno
+ * foi aprovado ou reprovado. 
+ */
+
+let nota1 = 7
+let nota2 = 9
+let nota3 = 8
+let nota4 = 8
+let nota5 = 4
+let nota6 = 6
+let nota7 = 7
+
+let media = (nota1 + nota2 + nota3 + nota4 + nota5 +nota6 + nota7) / 7
+
+if(media < 6){
+    console.log("Reprovado")
+}else{
+    console.log("Aprovado")
+}
+
+/**Exercicio 7
+ * Crie um botão em HTML e utilize o evento de clique em Javascript para alterar a cor de fundo da página
+ * para verde. Para isso, utilize o código document.body.style.backgroundColor = 'green';dentro da função
+ * do evento de clique.
+ */
+
+const btn = document.getElementById("btn");
+
+    btn.addEventListener('click', function() {
+    document.body.style.backgroundColor = 'green';
+});
+
+/**Exercicio 8
+ * Crie um programa em Javascript que contenha um evento em que, ao passar o mouse sobre uma div,
+ * o texto e a cor de fundo da div são alterados. O aluno deverá criar a estrutura do evento e declarar o id da
+ * div no HTML. 
+ */
+
+const txt = document.getElementById("texto")
+
+txt.addEventListener("mouseover",function(){
+
+    txt.innerHTML = "NOVO TEXTO!";
+    txt.style.backgroundColor = "grey"
+    txt.style.color = "white"
+})
