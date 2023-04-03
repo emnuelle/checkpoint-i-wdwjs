@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CP1-WEB/DEV</title>
 </head>
 <body>
+    <div class="box" id="box-exemplo">Olá</div>
     <h1>Checkpoint</h1>
-    <button id="btn">CP1 - WEB/DEV</button>
+    <button id="btn">Clique aqui</button>
 
-   <h1> inicio do programa </h1>
+    <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis odio maxime ipsa cum in numquam nostrum eius quas quibusdam corrupti qui, minima nemo, blanditiis animi magnam. Molestias architecto pariatur laboriosam.</p>
 
-    <script src="js/script.js"></script>
+   
+<script>
+    const divBox = document.querySelector('#box-exemplo');
+    divBox.addEventListener('mouseover', () => {
+        divBox.innerHTML = divBox.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
+        divBox.style.backgroundColor = divBox.style.backgroundColor === 'green' ? 'yellow' : 'green';
+});
+    divBox.addEventListener('mouseout', () => {
+        divBox.innerHTML = 'Olá';
+        divBox.style.backgroundColor = 'green';
+ });      
+</script>
+
+    <script src="script.js"></script>
 </body>
 </html>
