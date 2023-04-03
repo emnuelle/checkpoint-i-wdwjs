@@ -28,3 +28,31 @@ if(imc < 18.5){
     console.log("Acima do peso")
 }
 
+/** Exercicio 4 
+ * Faça um programa idade 
+*/
+
+let idade = 25
+
+if(idade <= 12){
+    console.log("Criança")
+}else if(idade >= 13 && idade <= 18){
+    console.log("Adolecente")
+}else if(idade >= 19 && idade <= 60){
+    console.log("Adulto")
+}else{
+    console.log("Idoso")
+}
+
+/**Execicio 5
+ * Crie um programa que receba um nome de usuário com senha
+ */
+
+let login = "admin"
+let senha = "1234"
+
+if(login == "admin" && senha == "1234"){
+    console.log("O login foi realizado")
+}else{
+    console.log("Falha de autenticação")
+}
