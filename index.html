@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rm97973</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="box" id="box-exemplo">Olá</div>
+    <h1>Checkpoint</h1>
+    <button id="btn">Clique aqui</button>
+
+    <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis odio maxime ipsa cum in numquam nostrum eius quas quibusdam corrupti qui, minima nemo, blanditiis animi magnam. Molestias architecto pariatur laboriosam.</p>
+
+   
+<script>
+    const divBox = document.querySelector('#box-exemplo');
+    divBox.addEventListener('mouseover', () => {
+        divBox.innerHTML = divBox.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
+        divBox.style.backgroundColor = divBox.style.backgroundColor === '#E4D0D0' ? '#867070' : '#E4D0D0';
+});
+    divBox.addEventListener('mouseout', () => {
+        divBox.innerHTML = 'Olá';
+        divBox.style.backgroundColor = '#E4D0D0';
+ });      
+</script>
+
+    <script src="./script.js"></script>
 </body>
 </html>
