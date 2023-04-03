@@ -44,4 +44,15 @@ else{
     console.log("Idoso")
 }
 
+// ex 5 verificando senha e usuário
+let login = "97973"
+let senha = "meurm"
+
+if(login == "97973" && senha == "meurm"){
+    console.log("login realizado - Bem Vinda!")
+}
+else{
+    console.log("falha")
+}
+
 // 
