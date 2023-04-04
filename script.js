@@ -1,6 +1,7 @@
 // ex 1 declarando uma variavél no valor undefined
 let num 
 console.log(num)
+
 // ex 2 usando operador %
 let num1 = 25
 let num2 = 11
