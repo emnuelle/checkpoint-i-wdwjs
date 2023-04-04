@@ -119,7 +119,7 @@ txt.addEventListener("mouseover",function(){
 
 const box = document.getElementById("box")
 box.addEventListener("mouseover",function(){
-    box.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
+    box.innerHTML === 'Olá' ? 'Tchauu' : 'Olá';
     box.style.backgroundColor = "yellow"
 })
 
@@ -127,3 +127,5 @@ box.addEventListener("mouseout",function(){
     box.innerHTML === 'Tchau' ? 'Tchau' : 'Olá';
     box.style.backgroundColor = "green"
 })
+
+// fim dos exercicios
